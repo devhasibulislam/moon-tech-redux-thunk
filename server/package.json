@@ -1,0 +1,10 @@
+{
+  "name": "moon-tech",
+  "version": "1.0.0",
+  "description": "Approaching next level implementation by using Redux Thunk in a simple demo testing e-commerce project.",
+  "main": "index.js",
+  "repository": "https://github.com/hasibulislam999/moon-tech-redux-thunk",
+  "author": "Hasibul Islam",
+  "license": "MIT",
+  "private": true
+}
