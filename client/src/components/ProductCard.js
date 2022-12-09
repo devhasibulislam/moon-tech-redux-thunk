@@ -8,7 +8,7 @@ import {
   addToWishlist,
   removeFromCart,
   removeFromWishlist,
-} from "../redux/actions/productAction";
+} from "../redux/actions/productActions";
 
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
