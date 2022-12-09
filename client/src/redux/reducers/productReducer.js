@@ -2,6 +2,7 @@ import {
   ADD_PRODUCT,
   ADD_TO_CART,
   ADD_TO_WISHLIST,
+  LOAD_PRODUCT,
   PRODUCT_LOADED,
   REMOVE_FROM_CART,
   REMOVE_FROM_WISHLIST,
@@ -96,6 +97,12 @@ const productReducer = (state = initialState, action) => {
           (product) => product._id !== action.payload._id
         ),
       };
+
+    case LOAD_PRODUCT:
+      return {
+        ...state,
+        products: action.payload
+      }
 
     default:
       return state;
