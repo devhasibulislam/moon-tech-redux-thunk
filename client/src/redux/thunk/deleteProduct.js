@@ -2,7 +2,7 @@ import { removeProduct } from "../actions/productActions";
 
 const deleteProductData = (id) => {
   return async (dispatch, getState) => {
-    const res = await fetch(`http://localhost:5000/product/${id}`, {
+    const res = await fetch(`https://moon-tech-redux-thunk-ssr.vercel.app/product/${id}`, {
       method: "DELETE",
     });
     const data = await res.json();
