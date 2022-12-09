@@ -2,6 +2,7 @@ import {
   ADD_PRODUCT,
   ADD_TO_CART,
   ADD_TO_WISHLIST,
+  LOAD_PRODUCT,
   PRODUCT_LOADED,
   REMOVE_FROM_CART,
   REMOVE_FROM_WISHLIST,
@@ -54,5 +55,12 @@ export const removeFromWishlist = (product) => {
   return {
     type: REMOVE_FROM_WISHLIST,
     payload: product,
+  };
+};
+
+export const loadProduct = (data) => {
+  return {
+    type: LOAD_PRODUCT,
+    payload: data,
   };
 };
